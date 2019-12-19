@@ -24,10 +24,10 @@ public class CountDownLatchDemo {
                 latch.countDown();
             }
         });
-        es1.shutdown();
+       // es1.shutdown();
 
-        ExecutorService es2= Executors.newCachedThreadPool();
-        es2.execute(new Runnable() {
+//        ExecutorService es2= Executors.newCachedThreadPool();
+        es1.execute(new Runnable() {
             @Override
             public void run() {
                 try {
@@ -39,7 +39,7 @@ public class CountDownLatchDemo {
                 latch.countDown();
             }
         });
-        es2.shutdown();
+        es1.shutdown();
 
         System.out.println("等待两个线程执行完毕…… ……");
 
