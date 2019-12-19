@@ -7,18 +7,18 @@ import java.util.concurrent.CountDownLatch;
 public class CountDownBatchQueueDemo {
     public static void main(String[] args) throws InterruptedException {
         CountDownLatch cdl = new CountDownLatch(6);
-        for (int i = 0; i < 6; i++) {
+        for (int i = 0; i < 5; i++) {
             Thread thread1=new Thread(new FirstBatchWorker(cdl));
             thread1.start();
         }
 
-        for (int i = 0; i < 6; i++) {
+        for (int i = 0; i < 5; i++) {
             Thread thread2=new Thread(new SecondBatchWorker(cdl));
             thread2.start();
         }
 
         while(cdl.getCount()!=1){
-//            System.out.println("wait....");
+           System.out.println("wait....");
             Thread.sleep(1000);
         }
 
