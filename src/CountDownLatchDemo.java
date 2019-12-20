@@ -1,6 +1,5 @@
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import java.util.concurrent.ThreadFactory;
 
 /**
  * @author : Rocher Kong
@@ -10,7 +9,6 @@ public class CountDownLatchDemo {
     public static void main(String[] args){
         final java.util.concurrent.CountDownLatch latch=new java.util.concurrent.CountDownLatch(2);
         System.out.println("主线程开始执行…… ……");
-        ThreadFactory threadFactory;
         ExecutorService es1= Executors.newCachedThreadPool();
         es1.execute(new Runnable() {
             @Override

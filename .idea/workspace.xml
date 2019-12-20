@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75b17eb4-ab01-484c-9075-0fb5009a06e3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/CyclicBarrierDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CountDownBatchQueueDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CountDownBatchQueueDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CountDownLatchDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CountDownLatchDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyclicBarrierDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CyclicBarrierDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SemaphoreDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SemaphoreDemo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +62,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
-  <component name="RunManager" selected="Application.CyclicBarrierDemo">
+  <component name="RunManager" selected="Application.SemaphoreDemo">
     <configuration name="CountDownBatchQueueDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CountDownBatchQueueDemo" />
       <module name="Concurrent" />
@@ -89,8 +91,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SemaphoreDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SemaphoreDemo" />
+      <module name="Concurrent" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SemaphoreDemo" />
         <item itemvalue="Application.CyclicBarrierDemo" />
         <item itemvalue="Application.CountDownBatchQueueDemo" />
         <item itemvalue="Application.Parallellimit" />
@@ -121,7 +131,7 @@
       <option name="presentableId" value="Default" />
       <updated>1576668673498</updated>
       <workItem from="1576668675129" duration="1555000" />
-      <workItem from="1576724148073" duration="3846000" />
+      <workItem from="1576724148073" duration="13573000" />
     </task>
     <task id="LOCAL-00001" summary="add CountDownBatchQueueDemo">
       <created>1576754614306</created>
@@ -137,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576754662736</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add CyclicBarrierDemo">
+      <created>1576755292929</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1576755292929</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,7 +162,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add CountDownBatchQueueDemo" />
-    <option name="LAST_COMMIT_MESSAGE" value="add CountDownBatchQueueDemo" />
+    <MESSAGE value="add CyclicBarrierDemo" />
+    <option name="LAST_COMMIT_MESSAGE" value="add CyclicBarrierDemo" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="179" key="#Project_Structure" timestamp="1576747658707">
@@ -168,67 +186,57 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="806" y="409" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1576747477428" />
-    <state x="560" y="112" key="CommitChangelistDialog2" timestamp="1576754661654">
+    <state x="560" y="112" key="CommitChangelistDialog2" timestamp="1576755292229">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="560" y="112" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1576754661654" />
+    <state x="560" y="112" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1576755292229" />
     <state x="601" y="233" key="FileChooserDialogImpl" timestamp="1576747656705">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="601" y="233" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1576747656705" />
-    <state width="1877" height="481" key="GridCell.Tab.0.bottom" timestamp="1576755235364">
+    <state width="1877" height="462" key="GridCell.Tab.0.bottom" timestamp="1576818176719">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="481" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1576755235364" />
-    <state width="1877" height="481" key="GridCell.Tab.0.center" timestamp="1576755235364">
+    <state width="1877" height="462" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1576818176719" />
+    <state width="1877" height="462" key="GridCell.Tab.0.center" timestamp="1576818176719">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="481" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1576755235364" />
-    <state width="1877" height="481" key="GridCell.Tab.0.left" timestamp="1576755235364">
+    <state width="1877" height="462" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1576818176719" />
+    <state width="1877" height="462" key="GridCell.Tab.0.left" timestamp="1576818176719">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="481" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1576755235364" />
-    <state width="1877" height="481" key="GridCell.Tab.0.right" timestamp="1576755235364">
+    <state width="1877" height="462" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1576818176719" />
+    <state width="1877" height="462" key="GridCell.Tab.0.right" timestamp="1576818176719">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="481" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1576755235364" />
-    <state width="1877" height="481" key="GridCell.Tab.1.bottom" timestamp="1576755235297">
+    <state width="1877" height="462" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1576818176719" />
+    <state width="1877" height="462" key="GridCell.Tab.1.bottom" timestamp="1576818176719">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="481" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1576755235297" />
-    <state width="1877" height="481" key="GridCell.Tab.1.center" timestamp="1576755235296">
+    <state width="1877" height="462" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1576818176719" />
+    <state width="1877" height="462" key="GridCell.Tab.1.center" timestamp="1576818176719">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="481" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1576755235296" />
-    <state width="1877" height="481" key="GridCell.Tab.1.left" timestamp="1576755235296">
+    <state width="1877" height="462" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1576818176719" />
+    <state width="1877" height="462" key="GridCell.Tab.1.left" timestamp="1576818176719">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="481" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1576755235296" />
-    <state width="1877" height="481" key="GridCell.Tab.1.right" timestamp="1576755235297">
+    <state width="1877" height="462" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1576818176719" />
+    <state width="1877" height="462" key="GridCell.Tab.1.right" timestamp="1576818176719">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="481" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1576755235297" />
+    <state width="1877" height="462" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1576818176719" />
     <state x="440" y="95" key="SettingsEditor" timestamp="1576747725960">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="440" y="95" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1576747725960" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1576754663924">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1576755294142">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1576754663924" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/SemaphoreDemo.java</url>
-          <line>7</line>
-          <properties class="SemaphoreDemo" method="main">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1576755294142" />
+    <state width="354" height="350" key="documentation.popup.size" timestamp="1576812451241">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="354" height="350" key="documentation.popup.size/0.0.1920.1040@0.0.1920.1040" timestamp="1576812451241" />
   </component>
 </project>

@@ -7,7 +7,7 @@ import java.util.concurrent.Semaphore;
 public class SemaphoreDemo {
     public static void main(String[] args) {
         System.out.println("begin!");
-        Semaphore semaphore = new Semaphore(2);
+        Semaphore semaphore = new Semaphore(5);
         for (int i = 0; i < 10; i++)
         {
             Thread thread=new Thread(new SemaphoreWorker(semaphore));
@@ -15,16 +15,12 @@ public class SemaphoreDemo {
         }
     }
 }
-
 class SemaphoreWorker implements Runnable {
     private String name;
     private Semaphore semaphore;
-
     public SemaphoreWorker(Semaphore semaphore) {
         this.semaphore = semaphore;
     }
-
-
     @Override
     public void run() {
         try {
@@ -39,7 +35,6 @@ class SemaphoreWorker implements Runnable {
             semaphore.release();
         }
     }
-
     private void log(String msg) {
         if (name == null) {
             name = Thread.currentThread().getName();

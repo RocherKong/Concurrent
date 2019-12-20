@@ -10,28 +10,24 @@ public class CyclicBarrierDemo {
         CyclicBarrier cb = new CyclicBarrier(5, new Runnable() {
             @Override
             public void run() {
-                System.out.println("Go");
+                System.out.println("Action Go");
             }
         });
-
         for (int i = 0; i < 5; i++) {
             Thread t = new Thread(new CyclicBarrierWorker(cb));
             t.start();
         }
     }
-
     static class CyclicBarrierWorker implements Runnable {
         private CyclicBarrier barrier;
-
         CyclicBarrierWorker(CyclicBarrier barrier) {
             this.barrier = barrier;
         }
-
         @Override
         public void run() {
             try {
-                for (int i = 0; i < 3; i++) {
-                    System.out.println("Executed!");
+                for (int i = 0; i < 9; i++) {
+                    System.out.println("No."+i+".Executed!");
                     barrier.await();
                 }
             } catch (BrokenBarrierException e) {
