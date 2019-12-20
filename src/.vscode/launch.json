@@ -1,0 +1,16 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - SemaphoreDemo",
+            "request": "launch",
+            "mainClass": "SemaphoreDemo"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - CountDownBatchQueueDemo",
+            "request": "launch",
+            "mainClass": "CountDownBatchQueueDemo"
+        }
+    ]
+}
